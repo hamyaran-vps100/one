@@ -48,8 +48,8 @@ body {
   direction:rtl;
 }
 .container{
-max-width: 1280px;
-    margin: 0 auto;
+	max-width: 100vw;;
+	margin: 0 auto;
 	}
 .container a, .container .infobox{
   display: flex;
