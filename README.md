@@ -39,6 +39,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body, html {
+  overflow-x: hidden;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -47,12 +50,17 @@ body {
   padding: 20px;
   direction:rtl;
 }
+
+	
 .container{
-max-width: 480px;
+ max-width: 100%;
+  padding: 0 10px;
     margin: 0 auto;
 	}
 .container a, .container .infobox{
   display: flex;
+  flex: 1 1 100%;
+	
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
@@ -62,6 +70,8 @@ max-width: 480px;
 .infobox li{line-height:5px;}
 
 .box {
+	 box-sizing: border-box; /* جلوگیری از اضافه شدن padding به عرض */
+  
   display: flex;
   align-items: center;
   background: #fff;
