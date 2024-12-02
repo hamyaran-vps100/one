@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خرید اشتراک پرسرعت بدون قطعی</title>
+  <meta name="description" content="خرید اشتراک پرسرعت و بدون قطعی برای اندروید، آیفون و ویندوز. مناسب برای ترید، گیمینگ و مرور ایمن با سرورهای قدرتمند و آپ‌تایم بالا.">
+  <meta name="keywords" content="خرید اشتراک, اشتراک پرسرعت, اشتراک اندروید, اشتراک آیفون, اشتراک ویندوز, فیلترشکن, فیلترشکن بدون قطعی, آی‌پی ثابت, اشتراک ترید, اشتراک گیمینگ">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   <div class="container">
   <div class="box" style="border:none; padding:10px;"><a href="https://hamyaran.shop"><img src="logo.png" alt="لوگو" width="150"></a></div><br>
   <div class="infobox box">
@@ -32,6 +43,8 @@
     </div>
 	</a>
   </div>
+</body>
+</html>
 
 <style>
 * {
@@ -48,8 +61,8 @@ body {
   direction:rtl;
 }
 .container{
-	max-width: 100vw;;
-	margin: 0 auto;
+max-width: 1280px;
+    margin: 0 auto;
 	}
 .container a, .container .infobox{
   display: flex;
