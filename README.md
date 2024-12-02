@@ -61,7 +61,7 @@ body {
   direction:rtl;
 }
 .container{
-max-width: 1280px;
+max-width: 480px;
     margin: 0 auto;
 	}
 .container a, .container .infobox{
