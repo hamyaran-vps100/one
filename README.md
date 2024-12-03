@@ -16,7 +16,7 @@
   <li class="wp-block-preformatted">7 روز ضمانت بازگشت وجه در صورت عدم رضایت</li>
   </ul>
   </div>
-    <a href="https://hamyaran.shop/panel">
+    
 	<div class="box">
       <img src="android.jpg" alt="لوگو اندروید" class="logo">
       <div class="content">
@@ -38,7 +38,7 @@
         <p>نصب آسان، پرسرعت، بدون قطعی</p>
       </div>
     </div>
-	</a>
+	
   </div>
     <p id="generated-number"></p>
     <input type="text" id="user-input" placeholder="کد را اینجا وارد کنید" />
