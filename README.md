@@ -15,6 +15,7 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
+            direction: rtl;
         }
         .box {
             border: 1px solid #ddd;
@@ -51,8 +52,9 @@
         <p id="generated-number" class="text-center mb-4"></p>
 
         <div class="d-flex justify-content-center mb-4">
-            <input type="text" id="user-input" class="form-control w-80" placeholder="کد را اینجا وارد کنید" />
             <button id="verify-btn" class="btn btn-primary ms-2">تایید</button>
+            <input type="text" id="user-input" class="form-control w-80" placeholder="کد را اینجا وارد کنید" />
+            
         </div>
 
         <div class="box text-center">
