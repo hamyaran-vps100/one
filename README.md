@@ -45,6 +45,18 @@
         };
         setInterval(detectDevTools, 1000); // بررسی هر ثانیه
     </script>
+
+     <script>
+        // بررسی User-Agent برای تشخیص موبایل
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        if (!isMobile) {
+            document.body.innerHTML = '<h1 style="text-align: center;">This site is only available on mobile devices.</h1>';
+        } else {
+            document.body.innerHTML = '<h1 style="text-align: center;">Welcome to the mobile version of the site!</h1>';
+            // کد اصلی سایت اینجا قرار می‌گیرد
+        }
+    </script>
 </head>
 <body>
     <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
