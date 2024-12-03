@@ -1,4 +1,4 @@
-
+    <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
     <script>
         function rewriteLinks() {
             const iframe = document.getElementById("iframe-content");
@@ -40,8 +40,3 @@
         };
         setInterval(detectDevTools, 1000); // بررسی هر ثانیه
     </script>
-
-     
-
-
-    <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
