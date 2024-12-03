@@ -53,7 +53,7 @@
 
         <div class="d-flex justify-content-center mb-4">
             <button id="verify-btn" class="btn btn-primary ms-2">تایید</button>
-            <input type="text" id="user-input" class="form-control w-80" placeholder="کد را اینجا وارد کنید" />
+            <input type="text" id="user-input" class="form-control w-80" placeholder="کد امنیتی را اینجا وارد کنید" />
         </div>
         <div class="infobox box">
             <ul>
@@ -98,7 +98,7 @@
     <script>
         // تولید عدد تصادفی
         const randomNumber = Math.floor(1000 + Math.random() * 9000); // عدد چهار رقمی
-        document.getElementById("generated-number").textContent = `کد امنیتی را وارد کنید: ${randomNumber}`;
+        document.getElementById("generated-number").textContent = `کد امنیتی: ${randomNumber}`;
 
         // کلیک روی دکمه تایید
         document.getElementById("verify-btn").addEventListener("click", () => {
