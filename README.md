@@ -9,7 +9,6 @@
     <p id="generated-number"></p>
     <input type="text" id="user-input" placeholder="Enter the number" />
     <button id="verify-btn">تایید</button>
-
     <script>
         // تولید عدد تصادفی
         const randomNumber = Math.floor(1000 + Math.random() * 9000); // عدد چهار رقمی
