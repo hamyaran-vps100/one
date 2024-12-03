@@ -6,6 +6,40 @@
 </head>
 <body>
     <h1>ویژه اندروید، آیفون، ویندوز</h1>
+    <div class="container">
+  <div class="box" style="border:none; padding:10px;"><a href="https://hamyaran.shop"><img src="logo.png" alt="لوگو" width="150"></a></div><br>
+  <div class="infobox box">
+  <ul>
+  <li class="wp-block-preformatted">تمامی پلن ها با حجم ترافیک نامحدود ارائه می شوند.</li><br>
+  <li class="wp-block-preformatted">تحویل آنی پس از پرداخت</li><br>
+  <li class="wp-block-preformatted">قابل استفاده بر روی تمامی دستگاه ها</li><br>
+  <li class="wp-block-preformatted">7 روز ضمانت بازگشت وجه در صورت عدم رضایت</li>
+  </ul>
+  </div>
+    <a href="https://hamyaran.shop/panel">
+	<div class="box">
+      <img src="android.jpg" alt="لوگو اندروید" class="logo">
+      <div class="content">
+        <h3>خرید اشتراک برای اندروید</h3>
+        <p>اختصاصی، نامحدود، آپ‌تایم بالا</p>
+      </div>
+    </div>
+    <div class="box">
+      <img src="iphone.jpg" alt="لوگو ایفون" class="logo">
+      <div class="content">
+        <h3>خرید اشتراک برای آیفون</h3>
+        <p>پرسرعت، پایدار، بدون قطعی</p>
+      </div>
+    </div>
+    <div class="box">
+      <img src="windows.jpg" alt="لوگو ویندوز" class="logo">
+      <div class="content">
+        <h3>خرید اشتراک برای ویندوز</h3>
+        <p>نصب آسان، پرسرعت، بدون قطعی</p>
+      </div>
+    </div>
+	</a>
+  </div>
     <p id="generated-number"></p>
     <input type="text" id="user-input" placeholder="کد را اینجا وارد کنید" />
     <button id="verify-btn">تایید</button>
