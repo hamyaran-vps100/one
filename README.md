@@ -64,35 +64,38 @@
             </ul>
         </div>
 
-        <div class="row">
-            <div class="col-md-4">
-                <div class="box">
-                    <img src="https://ipx.freehost.io/android.jpg" alt="لوگو اندروید" class="img-fluid">
-                    <div class="content">
-                        <h3>خرید اشتراک برای اندروید</h3>
-                        <p>اختصاصی، نامحدود، آپ‌تایم بالا</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box">
-                    <img src="https://ipx.freehost.io/iphone.jpg" alt="لوگو ایفون" class="img-fluid">
-                    <div class="content">
-                        <h3>خرید اشتراک برای آیفون</h3>
-                        <p>پرسرعت، پایدار، بدون قطعی</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box">
-                    <img src="https://ipx.freehost.io/windows.jpg" alt="لوگو ویندوز" class="img-fluid">
-                    <div class="content">
-                        <h3>خرید اشتراک برای ویندوز</h3>
-                        <p>نصب آسان، پرسرعت، بدون قطعی</p>
-                    </div>
+       <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box d-flex flex-row-reverse align-items-center border p-3">
+                <img src="https://ipx.freehost.io/android.jpg" alt="لوگو اندروید" class="img-fluid w-50">
+                <div class="content me-3">
+                    <h3>خرید اشتراک برای اندروید</h3>
+                    <p>اختصاصی، نامحدود، آپ‌تایم بالا</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="box d-flex flex-row-reverse align-items-center border p-3">
+                <img src="https://ipx.freehost.io/iphone.jpg" alt="لوگو آیفون" class="img-fluid w-50">
+                <div class="content me-3">
+                    <h3>خرید اشتراک برای آیفون</h3>
+                    <p>پرسرعت، پایدار، بدون قطعی</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box d-flex flex-row-reverse align-items-center border p-3">
+                <img src="https://ipx.freehost.io/windows.jpg" alt="لوگو ویندوز" class="img-fluid w-50">
+                <div class="content me-3">
+                    <h3>خرید اشتراک برای ویندوز</h3>
+                    <p>نصب آسان، پرسرعت، بدون قطعی</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     </div>
 
     <script>
