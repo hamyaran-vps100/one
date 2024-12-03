@@ -1,4 +1,13 @@
-    <html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Only</title>
+</head
+    <body>
+        <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
+    </body>
     <script>
         function rewriteLinks() {
             const iframe = document.getElementById("iframe-content");
@@ -40,5 +49,5 @@
         };
         setInterval(detectDevTools, 1000); // بررسی هر ثانیه
     </script>
-<iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
+
 </html>
