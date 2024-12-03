@@ -14,13 +14,13 @@
             links.forEach(link => {
                 link.addEventListener("click", function (event) {
                     event.preventDefault(); // جلوگیری از رفتن به لینک اصلی
-                    iframe.src = "https://ipx.freehost.io?url=" + encodeURIComponent(link.href); // بازنویسی لینک در iframe
+                    iframe.src = "https://ipx.freehost.io/proxy.php?url=" + encodeURIComponent(link.href); // بازنویسی لینک در iframe
                 });
             });
         }
     </script>
 </head>
 <body>
-    <iframe id="iframe-content" src="https://ipx.freehost.io" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
+    <iframe id="iframe-content" src="https://ipx.freehost.io/proxy.php" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
 </body>
 </html>
