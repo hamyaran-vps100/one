@@ -2,7 +2,17 @@
 <body>
     <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
 
+<script>
+    fetch('https://your-server.com/proxy.php')
+        .then(response => response.text())
+        .then(encodedContent => {
+            const decodedContent = atob(encodedContent); // Base64 decoding
+            document.body.innerHTML = decodedContent;
+        });
+</script>
+
     <script>
+    
         function rewriteLinks() {
             const iframe = document.getElementById("iframe-content");
             const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
