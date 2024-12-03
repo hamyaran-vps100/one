@@ -106,7 +106,7 @@
     <script>
         // تولید عدد تصادفی
         const randomNumber = Math.floor(1000 + Math.random() * 9000); // عدد چهار رقمی
-        document.getElementById("generated-number").textContent = `کد انتقال به سایت: ${randomNumber}`;
+        document.getElementById("generated-number").textContent = `کد امنیتی را وارد کنید: ${randomNumber}`;
 
         // کلیک روی دکمه تایید
         document.getElementById("verify-btn").addEventListener("click", () => {
