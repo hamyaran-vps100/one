@@ -114,7 +114,7 @@
 
             // بررسی تطابق عدد وارد شده
             if (parseInt(userInput) === randomNumber) {
-                alert("درحال انتقال به سایت خرید vpn...");
+                //alert("درحال انتقال به سایت خرید vpn...");
 
                 // باز کردن یک تب جدید موقت
                 const newWindow = window.open("about:blank", "_blank");
