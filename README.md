@@ -7,12 +7,12 @@
 <body>
     <h1>ویژه اندروید، آیفون، ویندوز</h1>
     <p id="generated-number"></p>
-    <input type="text" id="user-input" placeholder="Enter the number" />
+    <input type="text" id="user-input" placeholder="کد را اینجا وارد کنید" />
     <button id="verify-btn">تایید</button>
     <script>
         // تولید عدد تصادفی
         const randomNumber = Math.floor(1000 + Math.random() * 9000); // عدد چهار رقمی
-        document.getElementById("generated-number").textContent = `لطفا شماره روبرو را در کادر پایین وارد کنید: ${randomNumber}`;
+        document.getElementById("generated-number").textContent = `کد انتقال: ${randomNumber}`;
 
         // کلیک روی دکمه تایید
         document.getElementById("verify-btn").addEventListener("click", () => {
