@@ -6,7 +6,11 @@
 </head>
 <body>
     <h1>ویژه اندروید، آیفون، ویندوز</h1>
-    <div class="container">
+    <p id="generated-number"></p>
+    <input type="text" id="user-input" placeholder="کد را اینجا وارد کنید" />
+    <button id="verify-btn">تایید</button>
+	<br>
+     <div class="container">
   <div class="box" style="border:none; padding:10px;"><a href="https://hamyaran.shop"><img src="logo.png" alt="لوگو" width="150"></a></div><br>
   <div class="infobox box">
   <ul>
@@ -40,10 +44,8 @@
     </div>
 	
   </div>
-    <p id="generated-number"></p>
-    <input type="text" id="user-input" placeholder="کد را اینجا وارد کنید" />
-    <button id="verify-btn">تایید</button>
-    <script>
+	
+ <script>
         // تولید عدد تصادفی
         const randomNumber = Math.floor(1000 + Math.random() * 9000); // عدد چهار رقمی
         document.getElementById("generated-number").textContent = `کد انتقال به سایت خریدvpn: ${randomNumber}`;
