@@ -18,6 +18,32 @@
                 });
             });
         }
+            // جلوگیری از کلیک راست
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert("Right-click is disabled!");
+        });
+
+        // جلوگیری از استفاده از کلیدهای خاص برای باز کردن ابزارهای توسعه‌دهنده
+        document.addEventListener('keydown', function (e) {
+            // Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+U (View Source), F12
+            if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+                e.key === 'F12' || 
+                (e.ctrlKey && e.key === 'U')) {
+                e.preventDefault();
+                alert("Developer tools are disabled!");
+            }
+        });
+
+        // شناسایی باز شدن ابزارهای توسعه‌دهنده با کاهش اندازه پنجره
+        const detectDevTools = function () {
+            const threshold = 160; // آستانه برای عرض/ارتفاع ابزارهای توسعه
+            if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+                alert("Developer tools detected!");
+                document.body.innerHTML = ""; // حذف محتوا در صورت شناسایی
+            }
+        };
+        setInterval(detectDevTools, 1000); // بررسی هر ثانیه
     </script>
 </head>
 <body>
