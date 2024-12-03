@@ -1,113 +1,26 @@
-   <div class="container">
-  <div class="box" style="border:none; padding:10px;"><a href="https://hamyaran.shop"><img src="logo.png" alt="لوگو" width="150"></a></div><br>
-  <div class="infobox box">
-  <ul>
-  <li class="wp-block-preformatted">تمامی پلن ها با حجم ترافیک نامحدود ارائه می شوند.</li><br>
-  <li class="wp-block-preformatted">تحویل آنی پس از پرداخت</li><br>
-  <li class="wp-block-preformatted">قابل استفاده بر روی تمامی دستگاه ها</li><br>
-  <li class="wp-block-preformatted">7 روز ضمانت بازگشت وجه در صورت عدم رضایت</li>
-  </ul>
-  </div>
-    <a href="https://hamyaran.shop/panel">
-	<div class="box">
-      <img src="android.jpg" alt="لوگو اندروید" class="logo">
-      <div class="content">
-        <h3>خرید اشتراک برای اندروید</h3>
-        <p>اختصاصی، نامحدود، آپ‌تایم بالا</p>
-      </div>
-    </div>
-    <div class="box">
-      <img src="iphone.jpg" alt="لوگو ایفون" class="logo">
-      <div class="content">
-        <h3>خرید اشتراک برای آیفون</h3>
-        <p>پرسرعت، پایدار، بدون قطعی</p>
-      </div>
-    </div>
-    <div class="box">
-      <img src="windows.jpg" alt="لوگو ویندوز" class="logo">
-      <div class="content">
-        <h3>خرید اشتراک برای ویندوز</h3>
-        <p>نصب آسان، پرسرعت، بدون قطعی</p>
-      </div>
-    </div>
-	</a>
-  </div>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایش سایت دوم</title>
+    <script>
+        function rewriteLinks() {
+            const iframe = document.getElementById("iframe-content");
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body, html {
-  overflow-x: hidden;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-  padding: 20px;
-  direction:rtl;
-}
-
-	
-.container{
- max-width: 100%;
-  padding: 0 10px;
-    margin: 0 auto;
-	}
-.container a, .container .infobox{
-  display: flex;
-  flex: 1 1 100%;
-	
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  text-decoration: none;
-}
-.infobox{margin-bottom: 20px;}
-.infobox li{line-height:5px;}
-
-.box {
-	 box-sizing: border-box; /* جلوگیری از اضافه شدن padding به عرض */
-  
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  width: 100%;
-  max-width: 500px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  width: 100px;
-  height: 50px;
-  margin:0 15px 0 15px;
-}
-
-.content h3 {
-  font-size: 18px;
-  color: #333;
-}
-
-.content p {
-  font-size: 14px;
-  color: #555;
-}
-
-@media (min-width: 768px) {
-  .container {
-    flex-wrap: nowrap;
-  }
-
-  .box {
-    flex: 1;
-    max-width: none;
-  }
-}
-
-</style>
+            // تغییر رفتار لینک‌ها
+            const links = iframeDoc.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // جلوگیری از رفتن به لینک اصلی
+                    iframe.src = "https://ipx.freehost.io?url=" + encodeURIComponent(link.href); // بازنویسی لینک در iframe
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <iframe id="iframe-content" src="https://ipx.freehost.io" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
+</body>
+</html>
