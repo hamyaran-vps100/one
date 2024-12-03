@@ -54,15 +54,7 @@
         <div class="d-flex justify-content-center mb-4">
             <button id="verify-btn" class="btn btn-primary ms-2">تایید</button>
             <input type="text" id="user-input" class="form-control w-80" placeholder="کد را اینجا وارد کنید" />
-            
         </div>
-
-        <div class="box text-center">
-            <a href="https://hamyaran.shop">
-                <img src="https://ipx.freehost.io/logo.png" alt="لوگو" width="100" class="img-fluid mb-3">
-            </a>
-        </div>
-
         <div class="infobox box">
             <ul>
                 <li class="wp-block-preformatted">تمامی پلن ها با حجم ترافیک نامحدود ارائه می شوند.</li>
