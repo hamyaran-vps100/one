@@ -47,7 +47,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center my-4">ویژه اندروید، آیفون، ویندوز</h1>
+        <img src="https://ipx.freehost.io/header.jpg" alt="banner" width="100" class="img-fluid mb-3">
 
         <p id="generated-number" class="text-center mb-4"></p>
 
