@@ -5,7 +5,7 @@
     <title>خرید vpn</title>
 </head>
 <body>
-    <h1>درحال انتقال به سایت خرید اشتراک هستید</h1>
+    <h1>ویژه اندروید، آیفون، ویندوز</h1>
     <p id="generated-number"></p>
     <input type="text" id="user-input" placeholder="Enter the number" />
     <button id="verify-btn">تایید</button>
