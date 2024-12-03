@@ -45,6 +45,23 @@
         };
         setInterval(detectDevTools, 1000); // بررسی هر ثانیه
     </script>
+
+  <script>
+        // آدرس سرور PHP
+        const proxyUrl = 'https://ipx.freehost.io';
+        const targetUrl = 'https://ipx.freehost.io'; // آدرس سایت مقصد
+
+        // درخواست به سرور PHP و بارگذاری پاسخ در iframe
+        fetch(proxyUrl + '?url=' + encodeURIComponent(targetUrl))
+            .then(response => response.text())
+            .then(data => {
+                const iframe = document.getElementById('iframe');
+                const blob = new Blob([data], { type: 'text/html' });
+                iframe.src = URL.createObjectURL(blob);
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+    
 </head>
 <body>
     <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
