@@ -1,58 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
 <body>
-    <iframe id="iframe-content" src="https://ipx.freehost.io/" style="width: 100%; height: 100vh; border: none;" onload="rewriteLinks()"></iframe>
-
-<script>
-    fetch('https://ipx.freehost.io')
-        .then(response => response.text())
-        .then(encodedContent => {
-            const decodedContent = atob(encodedContent); // Base64 decoding
-            document.body.innerHTML = decodedContent;
-        });
-</script>
+    <div class="container">
+        <h1>Verify to Open the Link</h1>
+        <p id="random-number">Random Number: <strong></strong></p>
+        <input type="text" id="user-input" placeholder="Enter the number">
+        <button class="btn" id="submit-btn" disabled>Verify</button>
+        <p id="status" style="color: red; margin-top: 10px;"></p>
+    </div>
 
     <script>
-    
-        function rewriteLinks() {
-            const iframe = document.getElementById("iframe-content");
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        // تولید عدد تصادفی
+        const randomNumber = Math.floor(Math.random() * 9000) + 1000; // عددی بین 1000 تا 9999
+        document.querySelector("#random-number strong").textContent = randomNumber;
 
-            // تغییر رفتار لینک‌ها
-            const links = iframeDoc.querySelectorAll("a");
-            links.forEach(link => {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault(); // جلوگیری از رفتن به لینک اصلی
-                    iframe.src = "https://ipx.freehost.io/?url=" + encodeURIComponent(link.href); // بازنویسی لینک در iframe
+        const userInput = document.getElementById("user-input");
+        const submitBtn = document.getElementById("submit-btn");
+        const statusText = document.getElementById("status");
+
+        // فعال کردن دکمه هنگام وارد کردن عدد
+        userInput.addEventListener("input", () => {
+            submitBtn.disabled = userInput.value !== randomNumber.toString();
+        });
+
+        // باز کردن لینک در تب جدید پس از 5 ثانیه
+        submitBtn.addEventListener("click", () => {
+            submitBtn.disabled = true;
+            statusText.textContent = "Fetching link, please wait...";
+
+            // درخواست به سرور برای گرفتن لینک
+            fetch("https://ipx.freehost.io?getLink=true")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch the link from the server.");
+                    }
+                    return response.text();
+                })
+                .then(link => {
+                    // لینک دریافتی از سرور
+                    setTimeout(() => {
+                        window.open(link, "_blank");
+                        submitBtn.disabled = false;
+                        statusText.textContent = "";
+                    }, 5000); // 5000 میلی‌ثانیه معادل 5 ثانیه
+                })
+                .catch(error => {
+                    statusText.textContent = "Error: " + error.message;
+                    submitBtn.disabled = false;
                 });
-            });
-        }
-
-        // جلوگیری از کلیک راست در تمام صفحه
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-            alert("Right-click is disabled!");
         });
-
-        // جلوگیری از استفاده از کلیدهای خاص برای باز کردن ابزارهای توسعه‌دهنده
-        document.addEventListener('keydown', function (e) {
-            // Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+U (View Source), F12
-            if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
-                e.key === 'F12' || 
-                (e.ctrlKey && e.key === 'U')) {
-                e.preventDefault();
-                alert("Developer tools are disabled!");
-            }
-        });
-
-        // شناسایی باز شدن ابزارهای توسعه‌دهنده با کاهش اندازه پنجره
-        const detectDevTools = function () {
-            const threshold = 160; // آستانه برای عرض/ارتفاع ابزارهای توسعه
-            if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
-                alert("Developer tools detected!");
-                document.body.innerHTML = ""; // حذف محتوا در صورت شناسایی
-            }
-        };
-        setInterval(detectDevTools, 1000); // بررسی هر ثانیه
     </script>
 </body>
 </html>
