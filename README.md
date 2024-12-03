@@ -1,4 +1,4 @@
-    </html>
+    <html>
     <script>
         function rewriteLinks() {
             const iframe = document.getElementById("iframe-content");
