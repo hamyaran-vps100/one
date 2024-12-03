@@ -59,7 +59,7 @@
 
         <div class="box text-center">
             <a href="https://hamyaran.shop">
-                <img src="https://ipx.freehost.io/logo.png" alt="لوگو" width="150" class="img-fluid mb-3">
+                <img src="https://ipx.freehost.io/logo.png" alt="لوگو" width="100" class="img-fluid mb-3">
             </a>
         </div>
 
