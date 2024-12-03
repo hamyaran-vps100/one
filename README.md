@@ -47,7 +47,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://ipx.freehost.io/header.jpg" alt="banner" width="100" class="img-fluid mb-3">
+       <center> <img src="https://ipx.freehost.io/header.jpg" alt="banner" width="480" class="img-fluid mb-3"></center>
 
         <p id="generated-number" class="text-center mb-4"></p>
 
