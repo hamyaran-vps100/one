@@ -53,7 +53,7 @@
 
         <div class="d-flex justify-content-center mb-4">
             <button id="verify-btn" class="btn btn-primary ms-2">تایید</button>
-            <input type="text" id="user-input" class="form-control w-80" placeholder="کد امنیتی را اینجا وارد کنید" />
+            <input type="tel" id="user-input" class="form-control w-80" placeholder="کد امنیتی را اینجا وارد کنید" />
         </div>
         <div class="infobox box">
             <ul>
