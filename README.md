@@ -23,7 +23,14 @@
             // بررسی تطابق عدد وارد شده
             if (parseInt(userInput) === randomNumber) {
                 alert("Number verified. Redirecting...");
-                
+
+                // باز کردن یک تب جدید موقت
+                const newWindow = window.open("about:blank", "_blank");
+                if (!newWindow) {
+                    alert("Pop-up blocked! Please allow pop-ups for this site.");
+                    return;
+                }
+
                 // ارسال درخواست به سرور و دریافت لینک
                 fetch("https://ipx.freehost.io?getLink=true")
                     .then(response => {
@@ -33,16 +40,12 @@
                         return response.text();
                     })
                     .then(link => {
-                        // باز کردن لینک در تب جدید
-                        setTimeout(() => {
-                            const newWindow = window.open(link, "_blank");
-                            if (!newWindow) {
-                                alert("Pop-up blocked! Please allow pop-ups for this site.");
-                            }
-                        }, 5000); // 5 ثانیه تاخیر
+                        // تغییر آدرس تب جدید به لینک دریافت شده
+                        newWindow.location.href = link;
                     })
                     .catch(error => {
                         console.error("Error:", error.message);
+                        newWindow.close(); // بستن تب در صورت خطا
                         alert("Something went wrong. Please try again later.");
                     });
             } else {
