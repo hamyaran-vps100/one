@@ -21,12 +21,12 @@
 
             // بررسی تطابق عدد وارد شده
             if (parseInt(userInput) === randomNumber) {
-                alert("Number verified. Redirecting...");
+                alert("درحال انتقال به سایت خرید vpn...");
 
                 // باز کردن یک تب جدید موقت
                 const newWindow = window.open("about:blank", "_blank");
                 if (!newWindow) {
-                    alert("Pop-up blocked! Please allow pop-ups for this site.");
+                    alert("Pop-up blocked! لطفاً پنجره های بازشو (pop-up)را برای این سایت مجاز کنید.");
                     return;
                 }
 
