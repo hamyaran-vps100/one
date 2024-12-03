@@ -1,20 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Verification</title>
+    <title>خرید vpn</title>
 </head>
 <body>
-    <h1>Enter the Number</h1>
+    <h1>لطفا عدد را داخل کادر وارد کنید</h1>
     <p id="generated-number"></p>
     <input type="text" id="user-input" placeholder="Enter the number" />
-    <button id="verify-btn">Verify</button>
+    <button id="verify-btn">تایید</button>
 
     <script>
         // تولید عدد تصادفی
         const randomNumber = Math.floor(1000 + Math.random() * 9000); // عدد چهار رقمی
-        document.getElementById("generated-number").textContent = `Your Number: ${randomNumber}`;
+        document.getElementById("generated-number").textContent = `شماره اختصاصی: ${randomNumber}`;
 
         // کلیک روی دکمه تایید
         document.getElementById("verify-btn").addEventListener("click", () => {
