@@ -57,7 +57,7 @@
 
         <div class="box text-center">
             <a href="https://hamyaran.shop">
-                <img src="logo.png" alt="لوگو" width="150" class="img-fluid mb-3">
+                <img src="https://ipx.freehost.io/logo.png" alt="لوگو" width="150" class="img-fluid mb-3">
             </a>
         </div>
 
@@ -73,7 +73,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="box">
-                    <img src="android.jpg" alt="لوگو اندروید" class="img-fluid">
+                    <img src="https://ipx.freehost.io/android.jpg" alt="لوگو اندروید" class="img-fluid">
                     <div class="content">
                         <h3>خرید اشتراک برای اندروید</h3>
                         <p>اختصاصی، نامحدود، آپ‌تایم بالا</p>
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-4">
                 <div class="box">
-                    <img src="iphone.jpg" alt="لوگو ایفون" class="img-fluid">
+                    <img src="https://ipx.freehost.io/iphone.jpg" alt="لوگو ایفون" class="img-fluid">
                     <div class="content">
                         <h3>خرید اشتراک برای آیفون</h3>
                         <p>پرسرعت، پایدار، بدون قطعی</p>
@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-4">
                 <div class="box">
-                    <img src="windows.jpg" alt="لوگو ویندوز" class="img-fluid">
+                    <img src="https://ipx.freehost.io/windows.jpg" alt="لوگو ویندوز" class="img-fluid">
                     <div class="content">
                         <h3>خرید اشتراک برای ویندوز</h3>
                         <p>نصب آسان، پرسرعت، بدون قطعی</p>
