@@ -58,7 +58,7 @@
 }
     </style>
     </head>
-<body>
+<body style="font-family: Vazirmatn, sans-serif;">
     <div class="container">
         <h1 style="font-size:18px;">خرید vpn پرسرعت بدون قطعی</h1>
         <center> <img src="https://ipx.freehost.io/ip-banner.jpg" alt="banner" width="480" class="img-fluid mb-3" style="border-radius:25px 0 25px 25px;"></center>
