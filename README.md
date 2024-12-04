@@ -47,6 +47,7 @@
 </head>
 <body>
     <div class="container">
+        <h1>خرید vpnبرای اندروید، آیفون، ویندوز روی تمامی خطوط اینترنت با پشتیبانی 24 ساعته آنلاین</h1>
        <center> <img src="https://ipx.freehost.io/ip-banner.jpg" alt="banner" width="480" class="img-fluid mb-3" style="border-radius:25px 0 25px 25px;"></center>
 
         <p id="generated-number" class="text-center mb-4"></p>
