@@ -28,7 +28,7 @@
         .content {
             padding: 15px;
         }
-        .content h1 {font-size:18px;}
+        h1 {font-size:18px;}
         .content h3 {
             color: #333;
         }
