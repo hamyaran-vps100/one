@@ -1,62 +1,16 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
     <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            font-family: Vazirmatn, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            direction: rtl;
-        }
-        .box {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            background-color: white;
-            overflow: hidden;
-        }
-        .box img {
-            width: 100%;
-            border-bottom: 1px solid #ddd;
-        }
-        .content {
-            padding: 15px;
-        }
-        h1 {font-size:18px;}
-        .content h3 {
-            color: #333;
-        }
-        .content p {
-            color: #777;
-        }
-        .infobox ul {
-            padding-left: 20px;
-        }
-        .infobox li {
-            margin-bottom: 10px;
-        }
-        // <uniquifier>: Use a unique and descriptive class name
-        // <weight>: Use a value from 100 to 900
-
-        .vazirmatn-<uniquifier> {
-          font-family: "Vazirmatn", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: <weight>;
-          font-style: normal;
-}
-    </style>
-    </head>
-<body style="font-family: Vazirmatn, sans-serif;">
+</head>
+<body>
     <div class="container">
         <h1 style="font-size:18px;">خرید vpn پرسرعت بدون قطعی</h1>
         <center> <img src="https://ipx.freehost.io/ip-banner.jpg" alt="banner" width="480" class="img-fluid mb-3" style="border-radius:25px 0 25px 25px;"></center>
@@ -160,5 +114,53 @@
             }
         });
     </script>
+    <style>
+        body {
+            font-family: Vazirmatn, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            direction: rtl;
+        }
+        .box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: white;
+            overflow: hidden;
+        }
+        .box img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .content {
+            padding: 15px;
+        }
+        h1 {font-size:18px;}
+        .content h3 {
+            color: #333;
+        }
+        .content p {
+            color: #777;
+        }
+        .infobox ul {
+            padding-left: 20px;
+        }
+        .infobox li {
+            margin-bottom: 10px;
+        }
+        // <uniquifier>: Use a unique and descriptive class name
+        // <weight>: Use a value from 100 to 900
+
+        .vazirmatn-<uniquifier> {
+          font-family: "Vazirmatn", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+}
+    </style>
 </body>
 </html>
