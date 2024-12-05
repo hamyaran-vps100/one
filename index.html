@@ -21,7 +21,7 @@
                 <li class="wp-block-preformatted">قابل استفاده بر روی تمامی دستگاه ها</li>
                 <li class="wp-block-preformatted">7 روز ضمانت بازگشت وجه در صورت عدم رضایت</li>
             </ul>
-            <button id="verify-btn" class="btn btn-primary ms-2">ثبت سفارش</button>
+            <button class="btn btn-primary ms-2 verify-btn">ثبت سفارش</button>
         </div>
         <div class="border box" style="padding: 15px;">
         <h2>VPN سریع و امن برای دسترسی آزاد به اینترنت و شبکه‌های اجتماعی</h2>
@@ -32,7 +32,7 @@
 <div class="container mt-3">
     <div class="row gy-2">
         <div class="col-md-4">
-            <div class="d-flex flex-row-reverse align-items-center border p-1 box" id="verify-btn">
+            <div class="d-flex flex-row-reverse align-items-center border p-1 box verify-btn">
                 <img src="https://ipx.freehost.io/android.jpg" alt="لوگو اندروید" class="img-fluid" style="width: 60px; height: auto;">
                 <div class="content me-2">
                     <h6 class="mb-1">خرید اشتراک برای اندروید</h6>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="col-md-4" id="verify-btn">
-            <div class="d-flex flex-row-reverse align-items-center border p-1 box" id="verify-btn">
+            <div class="d-flex flex-row-reverse align-items-center border p-1 box verify-btn">
                 <img src="https://ipx.freehost.io/iphone.jpg" alt="لوگو آیفون" class="img-fluid" style="width: 60px; height: auto;">
                 <div class="content me-2">
                     <h6 class="mb-1">خرید اشتراک برای آیفون</h6>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="col-md-4" id="verify-btn">
-            <div class="d-flex flex-row-reverse align-items-center border p-1 box" id="verify-btn">
+            <div class="d-flex flex-row-reverse align-items-center border p-1 box verify-btn">
                 <img src="https://ipx.freehost.io/windows.jpg" alt="لوگو ویندوز" class="img-fluid" style="width: 60px; height: auto;">
                 <div class="content me-2">
                     <h6 class="mb-1">خرید اشتراک برای ویندوز</h6>
@@ -64,10 +64,16 @@
     </div>
 
  <script>
-    document.getElementById('verify-btn').addEventListener('click', function() {
-        window.location.href = "https://hamyaran-ip.shop/";
+    // انتخاب تمام دکمه‌ها با کلاس verify-btn
+    const buttons = document.querySelectorAll('.verify-btn');
+    
+    // اضافه کردن رویداد کلیک به همه دکمه‌ها
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            window.location.href = "https://hamyaran-ip.shop/";
+        });
     });
- </script>
+</script>
     <style>
         body {
             font-family: Vazirmatn, sans-serif;
