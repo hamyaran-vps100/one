@@ -14,7 +14,41 @@
     <div class="container">
         <h1 style="font-size:18px;">اتصال حرفه‌ای برای کاربران خاص</h1>
         <center><img src="header-git.jpg" alt="banner" width="480" class="img-fluid mb-3 radius verify-btn"></center>
-      
+
+	<div class="container mt-3">
+    <div class="row gy-2">
+        <div class="device">
+            <div class="d-flex flex-column border p-3 box radius verify-btn">
+                <div class="content">
+                    <h6 class="mb-1">انتخاب اشتراک</h6>
+                    <p class="text-muted small mb-2">یکی از گزینه‌های زیر را انتخاب کنید:</p>
+                    <div class="subscription-options">
+                        <div class="subscription-option" data-link="link1">
+                            <span class="subscription-type">یک ماهه</span>
+                            <span class="price-box">144 تومان</span>
+                        </div>
+                        <div class="subscription-option" data-link="link2">
+                            <span class="subscription-type">یک ماهه (2کاربره)</span>
+                            <span class="price-box">194 تومان</span>
+                        </div>
+                        <div class="subscription-option" data-link="link3">
+                            <span class="subscription-type">سه ماهه</span>
+                            <span class="price-box">294 تومان</span>
+							<span class="ribbon">بصرفه</span>
+                        </div>
+                        <div class="subscription-option" data-link="link4">
+                            <span class="subscription-type">سه ماهه (2کاربره)</span>
+                            <span class="price-box">394 تومان</span>
+							<span class="ribbon">بصرفه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	    
     <div class="border box radius" style="padding: 15px;">
         <h2>اتصال باکیفیت</h2>
 	<strong>به پلتفرم های پرطرفدار</strong>
@@ -182,6 +216,54 @@
             margin-bottom: 10px;
             font-size: 14px;
         }
+
+	    .subscription-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .subscription-option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .subscription-option:hover {
+        background-color: #e0e0e0;
+    }
+    .subscription-type {
+        text-align: right;
+        flex-grow: 1;
+    }
+    .price-box {
+        background-color: #34c7cf;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+.subscription-option {
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: rotate(15deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
     </style>
 </body>
 </html>
