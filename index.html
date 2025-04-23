@@ -25,22 +25,37 @@
                     <div class="subscription-options">
                         <div class="subscription-option" data-link="link1">
                             <span class="subscription-type">یک ماهه</span>
-                            <span class="price-box">144 تومان</span>
+                            <span class="price-box">144
+				    <svg class="toman-icon"><use xlink:href="#toman-icon"></use></svg>
+			    </span>
                         </div>
                         <div class="subscription-option" data-link="link2">
                             <span class="subscription-type">یک ماهه (2کاربره)</span>
-                            <span class="price-box">194 تومان</span>
+                            <span class="price-box">194
+				    <svg class="toman-icon"><use xlink:href="#toman-icon"></use></svg>
+			    </span>
                         </div>
                         <div class="subscription-option" data-link="link3">
-                            <span class="subscription-type">سه ماهه</span>
-                            <span class="price-box">294 تومان</span>
-							<span class="ribbon">بصرفه</span>
-                        </div>
-                        <div class="subscription-option" data-link="link4">
-                            <span class="subscription-type">سه ماهه (2کاربره)</span>
-                            <span class="price-box">394 تومان</span>
-							<span class="ribbon">بصرفه</span>
-                        </div>
+    				<span class="subscription-type">سه ماهه</span>
+    			<div>
+        			<span class="original-price">450</span>
+        			<span class="price-box">294
+					<svg class="toman-icon"><use xlink:href="#toman-icon"></use></svg>
+				</span>
+    			</div>
+    				<span class="ribbon">بصرفه</span>
+			</div>
+			<div class="subscription-option" data-link="link4">
+    				<span class="subscription-type">سه ماهه (2کاربره)</span>
+    			<div>
+        			<span class="original-price">590</span>
+        			<span class="price-box">394
+					<svg class="toman-icon"><use xlink:href="#toman-icon"></use></svg>
+				</span>
+    			</div>
+    				<span class="ribbon">بصرفه</span>
+			</div>
+
                     </div>
                 </div>
             </div>
@@ -170,7 +185,7 @@
         body {
             font-family: Vazirmatn, sans-serif;
             background-color: #f4f4f4;
-            padding: 20px;
+            padding: 0 10px;
         }
         .container {
             max-width: 480px;
@@ -191,7 +206,7 @@
         }
         .radius{border-radius: 25px 0 25px 25px;}
         .content {
-            padding: 15px;
+            padding: 5px;
         }
         h1,h2 {font-size: 1rem;}
         p{text-align: justify; color: var(--bs-secondary-color) !important; font-size:0.86em;}
@@ -264,6 +279,23 @@
     transform: rotate(15deg);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.original-price {
+   text-decoration: line-through;
+    color: #ffffff;
+    margin-left: 5px;
+    font-size: 0.8em;
+    background: #34c7cf;
+    padding: 5px;
+    border-radius: 25px;
+}
+.toman-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor; /* یا رنگ دلخواه مثل: #333 */
+  margin-right: 4px;
+}
+.hidden{display:none;}
     </style>
 </body>
 </html>
